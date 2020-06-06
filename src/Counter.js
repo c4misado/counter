@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-Counter() { function Counter() {
+function Counter(props) {
   // Declares a new state variable, which we will call "count"
   // Declares a setCount function that allows you to modify the count value
-  const[count, setCount] = useState(0);
+  const[count, setCount] = useState(props.startValue);
 
   return (
     <div>
